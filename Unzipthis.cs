@@ -23,7 +23,7 @@ namespace AzUnzipEverything
 
             try{
                 if(name.Split('.').Last().ToLower() == "zip"){
-
+                    //just adding a comment
                     CloudStorageAccount storageAccount = CloudStorageAccount.Parse(destinationStorage);
                     CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
                     CloudBlobContainer container = blobClient.GetContainerReference(destinationContainer);
